@@ -41,7 +41,7 @@ body{
 }
 header i{
     cursor: pointer;
-    font-size: 0px;
+    font-size: 30px;
     margin-right: 8px;
 }
 .wrapper.activate header i{
@@ -81,11 +81,14 @@ header i{
     height: 55px;
     border: none;
     outline: none;
+    font-size: 18px;
+    border-radius: 7px;
 }
 
 .input-part  input{
     text-align: center;
     border: 1px solid var(--light_gray);
+
 }
 .input-part  input:is(:focus, :valid){
     border: 2px solid var(--light_blue);
