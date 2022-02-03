@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root{
+    --light_blue:#43affc;
+    --light_gray: #bfbfbf;
+    --white: #fff;
+    --light: #ccc;
+    --red: #721c24;
+    --light_pink: #f8d7da;
+    --light_salmon: #f5c6cb;
+    --cyan: #0c5460;
+    --light_cyan: #d1ecf1;
+    --ultra_light_cyan: #bee5eb;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color:var(--light_blue) ;
+}
+.wrapper{
+    width: 400px;
+    border-radius: 7px;
+    background-color: var(--white);
+}
+.wrapper header{
+    color: var(--light_blue);
+    font-size: 21px;
+    font-weight: 500;
+    padding: 16px 15px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--light_gray);
+}
+header i{
+    cursor: pointer;
+    font-size: 30px;
+    margin-right: 8px;
+}
+.wrapper .input-part{
+    display: none;
+    margin: 20px 25px 30px;
+
+}
+.input-part .info-txt{
+    display: none;
+    font-size: 17px;
+    text-align: center;
+    padding: 12px 10px;
+    border-radius: 7px;
+    margin-bottom: 15px;
+}
+.info-txt.error{
+    display: block;
+    color: var(--red) ;
+    background:var(--light_pink) ;
+    border: 1px solid var(--light_salmon);
+}
+.info-txt.peding{
+    display: block;
+    color: var(--cyan) ;
+    background:var(--light_cyan) ;
+    border: 1px solid var(--ultra_light_cyan);
+}
+
+.input-part :where(input, button){
+    width: 100%;
+    height: 55px;
+    border: none;
+    outline: none;
+}
+
+.input-part  input{
+    text-align: center;
+    border: 1px solid var(--light_gray);
+}
+.input-part  input:is(:focus, :valid){
+    border: 2px solid var(--light_blue);
+}
+.input-part .separator{
+    height: 1px;
+    width: 100%;
+    margin: 25px 0;
+    background: var(--light);
+    display: flex;
+    align-items: center;justify-content: center;
+}
+.separator::before{
+    content: "or";
+    color: var(--light);
+    font-size: 19px;
+    padding: 0 15px;
+    background-color: var(--white);
+
+}
+.input-part button{
+    color: var(--white);
+    cursor: pointer;
+    background: var(--light_blue);
+}

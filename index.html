@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App in JS</title>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <i class="bx bx-left-arrow-alt"> Weather App</i>
+        </header>
+        <section class="input-part">
+            <p class="info-txt">Please enter a valid city name</p>
+            <input type="text" placeholder="Enter city name" spellcheck="false" required>
+            <div class="separator"></div>
+            <button>Get device Location</button>
+        </section>
+        <section class="weather-part">
+            <img src="Icons/clear.svg" alt="Weather Icon">
+            <div class="temp">
+                <span class="numb">13</span>
+                <span class="deg">*</span>
+            </div>
+            <div class="weather">Broken</div>
+            <div class="location">
+                <i class="bx bx-map"></i>
+                <span>A city</span>
+            </div>
+            <div class="bottom-details">
+                <div class="column feels">
+                    <i class="bx bxs-thermometer"></i>
+                    <div class="details">
+                        <div class="temp">
+                            <span class="numb">13</span>
+                            <span class="deg">*</span>
+                        </div>
+                        <p>Feels like </p>
+                    </div>
+                </div>
+            </div>
+            <div class="column humidity">
+                <i class="bx bxs-droplet-half"></i>
+                <div class="details">
+                        <span class="numb">13</span>
+                    <p>Humidity</p>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
